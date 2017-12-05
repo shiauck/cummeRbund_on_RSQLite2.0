@@ -1,0 +1,96 @@
+import(methods)
+
+#importFrom(graphics, plot)
+importFrom(plyr, defaults)
+
+importFrom(BiocGenerics, annotation)
+#import(S4Vectors)
+
+importFrom(Biobase, featureNames)
+
+exportClasses(CuffSet,
+			CuffData,
+			CuffDist,
+			CuffFeature, 
+			CuffFeatureSet, 
+			CuffGene, 
+			CuffGeneSet
+)
+
+exportMethods(
+			runInfo,
+			varModel,
+			annotation,
+			genes,
+			isoforms,
+			TSS,
+			CDS,
+			promoters,
+			splicing,
+			relCDS,
+			fpkm,
+			repFpkm,
+			count,
+			distValues,
+			csDensity,
+			csScatter,
+			csVolcano,
+			csBoxplot,
+			csHeatmap,
+			csFoldChangeHeatmap,
+            csDistHeat,
+			csCluster,
+			csDendro,
+			MAplot,
+			dispersionPlot,
+			csSpecificity,
+			fpkmMatrix,
+			repFpkmMatrix,
+			countMatrix,
+			repCountMatrix,
+			diffData,
+			diffTable,
+			features,
+			featureNames,
+			samples,
+			replicates,
+			expressionPlot,
+			expressionBarplot,
+			getGene,
+			getGenes,
+			getFeatures,
+			getGeneId,
+			findGene,
+			getSig,
+			getSigTable,
+			addFeatures,
+			getLevels,
+			getRepLevels,
+			findSimilar,
+			makeRnk,
+			genePlot,
+			makeGeneRegionTrack,
+			DB,
+			sigMatrix,
+			csScatterMatrix,
+			csVolcanoMatrix,
+			MDSplot,
+			PCAplot,
+			fpkmSCVPlot,
+			csNMF,
+			conditions,
+			csPie
+)
+
+export("readCufflinks",
+		"JSdist",
+		"JSdistVec",
+		"JSdistFromP",
+		"shannon.entropy",
+		"makeprobs",
+		"makeprobsvec",
+		"csClusterPlot"
+		)
+
+#importClassesFrom("Biobase","Versioned")
+#importClassesFrom("Biobase","VersionedBiobase")
